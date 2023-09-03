@@ -1,2 +1,0 @@
-- [GNN の解説](https://buildersbox.corp-sansan.com/entry/2021/02/19/114000)
-- 
