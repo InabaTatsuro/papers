@@ -9,6 +9,11 @@
 
 
 ## MIR
-- Graph Neural Network for Music Score Data and Modeling Expressive Piano Performance[[Jeong+, 19](https://proceedings.mlr.press/v97/jeong19a.html)]
+- Graph Neural Network for Music Score Data and Modeling Expressive Piano Performance [[Jeong+, 19](https://proceedings.mlr.press/v97/jeong19a.html)]
   - 小節ごとの特徴をグラフ化して GNN で捉えて小節間の関係は LSTM 使って捉える
   - ピアノ譜の評価を行うモデルとして利用
+
+- Graph-based Polyphonic Multitrack Music Generation [[Cosenza+, 23/7](https://arxiv.org/abs/2307.14928)][#1]
+  - グラフ形式で Poliphonic Multitrack Music を表現
+  - 上記を生成する VAE を作成し評価
+
