@@ -18,6 +18,10 @@
 - Counterpoint by Convolution [[Huang+, ISMIR17](https://arxiv.org/abs/1903.07227)]
   - music generation, convolution, inpainting, Gibbs sampling
 
+- A Survey on Artificial Intelligence for Music Generation: Agents, Domains and Perspectives [[Olivan+, 22/11](https://arxiv.org/abs/2210.13944)]
+
+- Musicaiz: A python library for symbolic music generation, analysis and visualization [[Olivan+, 23](https://carlosholivan.github.io/musicaiz/)]
+  - Python の Symbolic Music Generation 用ライブラリ
 
 ## NLP
 ### Read Later
