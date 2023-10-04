@@ -25,6 +25,8 @@
 
 - Cadence Detection in Symbolic Classical Music using Graph Neural Networks [[Karystinaios+, ISMIR22](https://arxiv.org/abs/2208.14819)]
 
+- VirtuosoTune: Hierarchical Melody Language Model [[Jeong, 23](http://ieiespc.org/AURIC_OPEN_temp/RDOC/ieie03/ieietspc_202308_006.pdf)]
+
 ## NLP
 ### Read Later
 - Locating and Editing Factual Associations in GPT [Meng+, NeurIPS22](https://openreview.net/forum?id=-h6WAS6eE4)
