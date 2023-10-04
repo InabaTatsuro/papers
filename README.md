@@ -23,6 +23,8 @@
 - Musicaiz: A python library for symbolic music generation, analysis and visualization [[Olivan+, 23](https://carlosholivan.github.io/musicaiz/)]
   - Python の Symbolic Music Generation 用ライブラリ
 
+- Cadence Detection in Symbolic Classical Music using Graph Neural Networks [[Karystinaios+, ISMIR22](https://arxiv.org/abs/2208.14819)]
+
 ## NLP
 ### Read Later
 - Locating and Editing Factual Associations in GPT [Meng+, NeurIPS22](https://openreview.net/forum?id=-h6WAS6eE4)
