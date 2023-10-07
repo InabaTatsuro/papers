@@ -2,6 +2,12 @@
 
 ## MIR
 ### Music Generation
+- Museformer [[Yu+ NeurIPS22](https://arxiv.org/abs/2210.10349)]
+  - Use fine- and coarse-grained attention for music generation
+  - fine-grained attention captures the tokens in the most relevant measure (the previous 1,2,4,8...)
+  - coarse-grained attention captures the summarization of the other measure, which reduces the computational cost
+
+
 - Music Transformer [[Huang+, ICLR19](https://arxiv.org/abs/1809.04281)][[#10](https://github.com/InabaTatsuro/papers/issues/10)]
   - Generate symbolic music by transformers with relative position-based attention
   - reduce the memory requirements in relative position-based attention by "skewing"
