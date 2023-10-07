@@ -2,11 +2,12 @@
 
 ## MIR
 ### Music Generation
-- Museformer [[Yu+ NeurIPS22](https://arxiv.org/abs/2210.10349)]
+- A Survey of AI Music Generation Tools and Models [[Zhu+, 23/8](https://arxiv.org/abs/2308.12982)][[#12](https://github.com/InabaTatsuro/papers/issues/12)]
+
+- Museformer [[Yu+ NeurIPS22](https://arxiv.org/abs/2210.10349)][[#11](https://github.com/InabaTatsuro/papers/issues/11)]
   - Use fine- and coarse-grained attention for music generation
   - fine-grained attention captures the tokens in the most relevant measure (the previous 1,2,4,8...)
   - coarse-grained attention captures the summarization of the other measure, which reduces the computational cost
-
 
 - Music Transformer [[Huang+, ICLR19](https://arxiv.org/abs/1809.04281)][[#10](https://github.com/InabaTatsuro/papers/issues/10)]
   - Generate symbolic music by transformers with relative position-based attention
@@ -29,14 +30,16 @@
 - Counterpoint by Convolution [[Huang+, ISMIR17](https://arxiv.org/abs/1903.07227)]
   - music generation, convolution, inpainting, Gibbs sampling
 
-- A Survey on Artificial Intelligence for Music Generation: Agents, Domains and Perspectives [[Olivan+, 22/11](https://arxiv.org/abs/2210.13944)]
-
 - Musicaiz: A python library for symbolic music generation, analysis and visualization [[Olivan+, 23](https://carlosholivan.github.io/musicaiz/)]
   - Python の Symbolic Music Generation 用ライブラリ
 
 - Cadence Detection in Symbolic Classical Music using Graph Neural Networks [[Karystinaios+, ISMIR22](https://arxiv.org/abs/2208.14819)]
 
 - VirtuosoTune: Hierarchical Melody Language Model [[Jeong, 23](http://ieiespc.org/AURIC_OPEN_temp/RDOC/ieie03/ieietspc_202308_006.pdf)]
+
+- Noise2Music: Text-conditioned Music Generation with Diffusion Models [[[Huang+, 23/2](https://arxiv.org/abs/2302.03917)]]
+
+- Transformer vae: A hierarchical model for structure-aware and interpretable music representation learning [[Jiang+, ICASSP20](https://ieeexplore.ieee.org/document/9054554)]
 
 ## NLP
 ### Architecture
