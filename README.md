@@ -42,6 +42,8 @@
 - Transformer vae: A hierarchical model for structure-aware and interpretable music representation learning [[Jiang+, ICASSP20](https://ieeexplore.ieee.org/document/9054554)]
 
 - Music VAE
+- NSynth
+- MuseNet
 
 ## NLP
 ### Architecture
