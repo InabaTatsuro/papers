@@ -44,6 +44,9 @@
 - Music VAE
 - NSynth
 - MuseNet
+- SDMuse
+
+
 
 ## NLP
 ### Architecture
