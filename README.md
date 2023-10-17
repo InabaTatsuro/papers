@@ -23,6 +23,8 @@
   - Train GCN and VAE to generate graph (music)
   - Not good performance
 
+
+
 ### Read Later
 - Modeling temporal tonal relations in polyphonic music through deep networks with a novel image-based representation [[Chuan+, AAAI18](https://ojs.aaai.org/index.php/AAAI/article/view/11880)]
   - mugic generation, convolution
@@ -48,6 +50,8 @@
 
 
 
+
+
 ## NLP
 ### Architecture
 - Hierarchical Attention Networks for Document Classification [[Yang+, 16](https://www.cs.cmu.edu/~./hovy/papers/16HLT-hierarchical-attention-networks.pdf)][[#8](https://github.com/InabaTatsuro/papers/issues/8)]
@@ -64,6 +68,7 @@
   - the research after "Locating and Editing Factual Associations in GPT"
 
 ## ML
+### Attention
 - Self-Attention with Relative Position Representations [[Shaw, NAACL18](https://arxiv.org/abs/1803.02155)][[#9](https://github.com/InabaTatsuro/papers/issues/9)]
   - extend self-attention to consider the pairwise relationships between each elements
   - Add the trainable relative position representations, and add them to key and query vectors
@@ -71,6 +76,10 @@
 - Graph Attention Networks [[Velickovic+, ICLR18](https://arxiv.org/abs/1710.10903)][[blog](https://petar-v.com/GAT/)][[#4](https://github.com/InabaTatsuro/papers/issues/4)]
   - train weight matrix which represents the relation between nodes
   - it can be seen as self attention with artificially created mask
+
+- On the Global Self-attention Mechanism for Graph Convolutional Networks[[Wang+, IEEE20](https://arxiv.org/abs/2010.10711)][[#13](https://github.com/InabaTatsuro/papers/issues/13)]
+  - Apply Global self-attention (GSA) to GCNs
+  - GSA allows GCNs to capture feature-based vertex relations regardless of edge connections
 
 
 ## CV
