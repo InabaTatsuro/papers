@@ -63,8 +63,8 @@
   - whitening means the transformation of the data to have a mean of zero and a covariance matrix of the identity matrix
 
 ### Read Later
-- Locating and Editing Factual Associations in GPT [Meng+, NeurIPS22](https://openreview.net/forum?id=-h6WAS6eE4)
-- Mass-Editing Memory in a Transformer [Meng+, ICLR23](https://openreview.net/forum?id=MkbcAHIYgyS)
+- Locating and Editing Factual Associations in GPT [[Meng+, NeurIPS22](https://openreview.net/forum?id=-h6WAS6eE4)]
+- Mass-Editing Memory in a Transformer [[Meng+, ICLR23](https://openreview.net/forum?id=MkbcAHIYgyS)]
   - the research after "Locating and Editing Factual Associations in GPT"
 
 ## ML
@@ -97,7 +97,7 @@
   - Add the trainable relative position representations, and add them to key and query vectors
 
 
-- Graph Attention Networks [[Velickovic+, ICLR18](https://arxiv.org/abs/1710.10903)][[blog](https://petar-v.com/GAT/)][[#4](https://github.com/InabaTatsuro/papers/issues/4)]
+- Graph Attention Networks [[Velickovic+, ICLR18](https://arxiv.org/abs/1710.10903)][[#4](https://github.com/InabaTatsuro/papers/issues/4)]
   - train weight matrix which represents the relation between nodes
   - it can be seen as self attention with artificially created mask
 
