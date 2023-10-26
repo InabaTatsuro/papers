@@ -68,19 +68,38 @@
   - the research after "Locating and Editing Factual Associations in GPT"
 
 ## ML
-### Attention
-- Self-Attention with Relative Position Representations [[Shaw, NAACL18](https://arxiv.org/abs/1803.02155)][[#9](https://github.com/InabaTatsuro/papers/issues/9)]
-  - extend self-attention to consider the pairwise relationships between each elements
-  - Add the trainable relative position representations, and add them to key and query vectors
+### Attention, graph
+- Graph Transformer Networks [[Yun+, NeurIPS19](https://arxiv.org/abs/1911.06455)][[#17](https://github.com/InabaTatsuro/papers/issues/17)]
+  - generate meta-path which represents multi-hop relations and new-graph structure by multiplication of different adjacency matrix
+  - can be applied to heterogeneous graph
 
-- Graph Attention Networks [[Velickovic+, ICLR18](https://arxiv.org/abs/1710.10903)][[blog](https://petar-v.com/GAT/)][[#4](https://github.com/InabaTatsuro/papers/issues/4)]
-  - train weight matrix which represents the relation between nodes
-  - it can be seen as self attention with artificially created mask
+
+- Graph Transformer [[Li+, 18](https://openreview.net/forum?id=HJei-2RcK7)][[#16](https://github.com/InabaTatsuro/papers/issues/16)]
+  - evolve target graph by recurrently applying source-attention from source graph and self-attention from target graph
+  - they can have different structure
+
+- Attention Guided Graph Convolutional Networks for Relation Extraction [[Guo+, ACL19](https://aclanthology.org/P19-1024/)][[#15](https://github.com/InabaTatsuro/papers/issues/15)]
+  - transform the original graph to a fully connected edge-weighted graph by self-attention
+
+
+- Multi-hop Attention Graph Neural Networks [[Wang+, IJCAI21](https://www.ijcai.org/proceedings/2021/425)][[#14](https://github.com/InabaTatsuro/papers/issues/14)]
+  - compute attention weights on edges, then compute self-attention weight between disconnected nodes
+  - can capture the long-range dependencies
+
 
 - On the Global Self-attention Mechanism for Graph Convolutional Networks[[Wang+, IEEE20](https://arxiv.org/abs/2010.10711)][[#13](https://github.com/InabaTatsuro/papers/issues/13)]
   - Apply Global self-attention (GSA) to GCNs
   - GSA allows GCNs to capture feature-based vertex relations regardless of edge connections
 
+
+- Self-Attention with Relative Position Representations [[Shaw, NAACL18](https://arxiv.org/abs/1803.02155)][[#9](https://github.com/InabaTatsuro/papers/issues/9)]
+  - extend self-attention to consider the pairwise relationships between each elements
+  - Add the trainable relative position representations, and add them to key and query vectors
+
+
+- Graph Attention Networks [[Velickovic+, ICLR18](https://arxiv.org/abs/1710.10903)][[blog](https://petar-v.com/GAT/)][[#4](https://github.com/InabaTatsuro/papers/issues/4)]
+  - train weight matrix which represents the relation between nodes
+  - it can be seen as self attention with artificially created mask
 
 ## CV
 - High-Resolution Image Synthesis with Latent Diffusion Models [[Rombach+, CVPR22](https://arxiv.org/abs/2112.10752)]
