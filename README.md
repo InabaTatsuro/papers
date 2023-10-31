@@ -2,6 +2,14 @@
 
 ## MIR
 ### Music Generation
+MELONS: generating melody with long-term structure using transformers and structure graph [[ICASSP22](https://arxiv.org/abs/2110.05020)][[#22](https://github.com/InabaTatsuro/papers/issues/18)]
+- factor melody generation into 2 sub-problems: structure generation and structure conditional melody generation
+- these sub-problems are solved by the linear transformer
+
+- Pop Music Transformer: Beat-based Modeling and Generation of Expressive Pop Piano Compositions [[ACM20](https://arxiv.org/abs/2002.00212)][[#20](https://github.com/InabaTatsuro/papers/issues/20)]
+  - propose REMI, new event representation of beat-based music
+  - use Auto Transcription to get enough training data
+
 - A Survey of AI Music Generation Tools and Models [[Zhu+, 23/8](https://arxiv.org/abs/2308.12982)][[#12](https://github.com/InabaTatsuro/papers/issues/12)]
 
 - Museformer [[Yu+ NeurIPS22](https://arxiv.org/abs/2210.10349)][[#11](https://github.com/InabaTatsuro/papers/issues/11)]
@@ -69,10 +77,19 @@
 
 ## ML
 ### Attention, graph
-- Graph Transformer Networks [[Yun+, NeurIPS19](https://arxiv.org/abs/1911.06455)][[#17](https://github.com/InabaTatsuro/papers/issues/17)]
-  - generate meta-path which represents multi-hop relations and new-graph structure by multiplication of different adjacency matrix
-  - can be applied to heterogeneous graph
+- Do Transformers Really Perform Bad for Graph Representation? [[NeurIPS21](https://arxiv.org/abs/2106.05234)][[#21](https://github.com/InabaTatsuro/papers/issues/21)]
+  - propose Graphormer, which is based on the standard Transformer and can utilize the structural information of a graph
+  - similar to [#18](https://github.com/InabaTatsuro/papers/issues/18)
 
+- GaAN: Gated Attention Networks for Learning on Large and Spatiotemporal Graphs [[Zhang+, 18](https://arxiv.org/abs/1803.07294)] [[#19](https://github.com/InabaTatsuro/papers/issues/19)]
+  - use a convolutional sub-network to control each attention head's weight
+
+- Global Self-Attention as a Replacement for Graph Convolution [[KDD22](https://arxiv.org/abs/2108.03348)][[#18](https://github.com/InabaTatsuro/papers/issues/18)]
+  - add edge information to the self-attention calculation
+
+- Graph Transformer Networks [[Yun+, NeurIPS19](https://arxiv.org/abs/1911.06455)][[#17](https://github.com/InabaTatsuro/papers/issues/17)]
+  - generate new meta-path which represents multi-hop relations and new-graph structure by multiplication of different adjacency matrix
+  - can be applied to heterogeneous graph
 
 - Graph Transformer [[Li+, 18](https://openreview.net/forum?id=HJei-2RcK7)][[#16](https://github.com/InabaTatsuro/papers/issues/16)]
   - evolve target graph by recurrently applying source-attention from source graph and self-attention from target graph
@@ -108,4 +125,4 @@
 
 ### Read Later
 
-- PeerNets: Exploiting Peer Wisdom Against Adversarial Attacks [[Svoboda+, 18](https://arxiv.org/abs/1806.00088)]****
+- PeerNets: Exploiting Peer Wisdom Against Adversarial Attacks [[Svoboda+, 18](https://arxiv.org/abs/1806.00088)]
