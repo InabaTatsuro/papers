@@ -2,6 +2,17 @@
 
 ## MIR
 ### Music Generation
+A Hierarchical Latent Vector Model for Learning Long-Term Structure in Music [[ICML18](https://arxiv.org/abs/1803.05428)][[#23](https://github.com/InabaTatsuro/papers/issues/23)]
+- hierarchical decoder which first outputs embeddings for sub-sequences and then uses these embeddings to generate each subsequence
+- propose MusicVAE which uses the hierarchical latent vector model
+
+PopMNet: Generating structured pop music melodies using neural networks [[Wu+, 19](https://www.sciencedirect.com/science/article/abs/pii/S000437022030062X)]
+- CNN generate melody structure which is defined by pairwise relations, specifically and the sequence between all bars in a melody
+- RNN generate melodies conditioned on the structure and chord progression
+
+A Hierarchical Recurrent Neural Network for Symbolic Melody Generation [[IEEE](https://arxiv.org/abs/1712.05274)]
+- factor melody generation into 3 sub-problems and each sub-problem is solved by each LSTM
+
 MELONS: generating melody with long-term structure using transformers and structure graph [[ICASSP22](https://arxiv.org/abs/2110.05020)][[#22](https://github.com/InabaTatsuro/papers/issues/18)]
 - factor melody generation into 2 sub-problems: structure generation and structure conditional melody generation
 - these sub-problems are solved by the linear transformer
@@ -26,7 +37,7 @@ Graph Neural Network for Music Score Data and Modeling Expressive Piano Performa
 - GNN captures the nodes information in a measure and LSTM w/HAN captures the measures information
 - Let the node have nodes information in other measures by updating iteratively
 
-- Graph-based Polyphonic Multitrack Music Generation [[Cosenza+, 23/7](https://arxiv.org/abs/2307.14928)][[#1](https://github.com/InabaTatsuro/papers/issues/1)]
+Graph-based Polyphonic Multitrack Music Generation [[Cosenza+, 23/7](https://arxiv.org/abs/2307.14928)][[#1](https://github.com/InabaTatsuro/papers/issues/1)]
 - Use graph to represent multitrack music score
 - Train GCN and VAE to generate graph (music)
 - Not good performance
