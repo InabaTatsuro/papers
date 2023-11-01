@@ -2,6 +2,10 @@
 
 ## MIR
 ### Music Generation
+Controllable deep melody generation via hierarchical music structure representation [[ISMIR21](https://arxiv.org/abs/2109.00663)][[#24](https://github.com/InabaTatsuro/papers/issues/24)]
+- music framework generates rhythm and basic melody using two separate transformer-based networks
+- then, generate the melody conditioned on the basic melody, rhythm, and chords
+
 A Hierarchical Latent Vector Model for Learning Long-Term Structure in Music [[ICML18](https://arxiv.org/abs/1803.05428)][[#23](https://github.com/InabaTatsuro/papers/issues/23)]
 - hierarchical decoder which first outputs embeddings for sub-sequences and then uses these embeddings to generate each subsequence
 - propose MusicVAE which uses the hierarchical latent vector model
