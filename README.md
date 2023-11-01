@@ -1,7 +1,10 @@
-# papers
 
-## MIR
-### Music Generation
+# MIR
+## Music Generation
+PopMAG: Pop Music Accompaniment Generation [[ACM20](https://arxiv.org/abs/2008.07703)][[#26](https://github.com/InabaTatsuro/papers/issues/26)]
+- Multitrack-MIDI representation (MuMIDI) enables simultaneous multi-track generation in a single sequence
+- model multiple note attributes of a musical note in one step and use the architecture of transformerXL to capture the long-term dependencies
+
 Controllable deep melody generation via hierarchical music structure representation [[ISMIR21](https://arxiv.org/abs/2109.00663)][[#24](https://github.com/InabaTatsuro/papers/issues/24)]
 - music framework generates rhythm and basic melody using two separate transformer-based networks
 - then, generate the melody conditioned on the basic melody, rhythm, and chords
@@ -25,8 +28,6 @@ Pop Music Transformer: Beat-based Modeling and Generation of Expressive Pop Pian
 - propose REMI, new event representation of beat-based music
 - use Auto Transcription to get enough training data
 
-A Survey of AI Music Generation Tools and Models [[Zhu+, 23/8](https://arxiv.org/abs/2308.12982)][[#12](https://github.com/InabaTatsuro/papers/issues/12)]
-
 Museformer [[Yu+ NeurIPS22](https://arxiv.org/abs/2210.10349)][[#11](https://github.com/InabaTatsuro/papers/issues/11)]
 - Use fine- and coarse-grained attention for music generation
 - fine-grained attention captures the tokens in the most relevant measure (the previous 1,2,4,8...)
@@ -46,9 +47,13 @@ Graph-based Polyphonic Multitrack Music Generation [[Cosenza+, 23/7](https://arx
 - Train GCN and VAE to generate graph (music)
 - Not good performance
 
+### Survey
+A Survey on Deep Learning for Symbolic Music Generation [[ACM23/8](https://dl.acm.org/doi/abs/10.1145/3597493)][[#25](https://github.com/InabaTatsuro/papers/issues/25)]
+
+A Survey of AI Music Generation Tools and Models [[Zhu+, 23/8](https://arxiv.org/abs/2308.12982)][[#12](https://github.com/InabaTatsuro/papers/issues/12)]
 
 
-### Read Later
+## Read Later
 Modeling temporal tonal relations in polyphonic music through deep networks with a novel image-based representation [[Chuan+, AAAI18](https://ojs.aaai.org/index.php/AAAI/article/view/11880)]
 - mugic generation, convolution
 
@@ -75,24 +80,24 @@ Transformer vae: A hierarchical model for structure-aware and interpretable musi
 
 
 
-## NLP
-### Architecture
+# NLP
+## Architecture
 Hierarchical Attention Networks for Document Classification [[Yang+, 16](https://www.cs.cmu.edu/~./hovy/papers/16HLT-hierarchical-attention-networks.pdf)][[#8](https://github.com/InabaTatsuro/papers/issues/8)]
 - HAN can capture the insights of the hierarchical structure (words form sentences, sentences form a document) and the difference in importance of each word and sentence
 
-### Sentence Embedding
+## Sentence Embedding
 WhitenedCSE: Whitening-based Contrastive Learning of Sentence Embeddings [[Gao+, ACL23](https://arxiv.org/abs/2104.08821)][[#5](https://github.com/InabaTatsuro/papers/issues/5)]
 - SimCSE + whitening
 - whitening means the transformation of the data to have a mean of zero and a covariance matrix of the identity matrix
 
-### Read Later
+## Read Later
 Locating and Editing Factual Associations in GPT [[Meng+, NeurIPS22](https://openreview.net/forum?id=-h6WAS6eE4)]
 
 Mass-Editing Memory in a Transformer [[Meng+, ICLR23](https://openreview.net/forum?id=MkbcAHIYgyS)]
 - the research after "Locating and Editing Factual Associations in GPT"
 
-## ML
-### Attention, graph
+# ML
+## Attention, graph
 Do Transformers Really Perform Bad for Graph Representation? [[NeurIPS21](https://arxiv.org/abs/2106.05234)][[#21](https://github.com/InabaTatsuro/papers/issues/21)]
 - propose Graphormer, which is based on the standard Transformer and can utilize the structural information of a graph
 - similar to [#18](https://github.com/InabaTatsuro/papers/issues/18)
@@ -114,31 +119,27 @@ Graph Transformer [[Li+, 18](https://openreview.net/forum?id=HJei-2RcK7)][[#16](
 Attention Guided Graph Convolutional Networks for Relation Extraction [[Guo+, ACL19](https://aclanthology.org/P19-1024/)][[#15](https://github.com/InabaTatsuro/papers/issues/15)]
 - transform the original graph to a fully connected edge-weighted graph by self-attention
 
-
 Multi-hop Attention Graph Neural Networks [[Wang+, IJCAI21](https://www.ijcai.org/proceedings/2021/425)][[#14](https://github.com/InabaTatsuro/papers/issues/14)]
 - compute attention weights on edges, then compute self-attention weight between disconnected nodes
 - can capture the long-range dependencies
-
 
 On the Global Self-attention Mechanism for Graph Convolutional Networks[[Wang+, IEEE20](https://arxiv.org/abs/2010.10711)][[#13](https://github.com/InabaTatsuro/papers/issues/13)]
 - Apply Global self-attention (GSA) to GCNs
 - GSA allows GCNs to capture feature-based vertex relations regardless of edge connections
 
-
 Self-Attention with Relative Position Representations [[Shaw, NAACL18](https://arxiv.org/abs/1803.02155)][[#9](https://github.com/InabaTatsuro/papers/issues/9)]
 - extend self-attention to consider the pairwise relationships between each elements
 - Add the trainable relative position representations, and add them to key and query vectors
-
 
 Graph Attention Networks [[Velickovic+, ICLR18](https://arxiv.org/abs/1710.10903)][[#4](https://github.com/InabaTatsuro/papers/issues/4)]
 - train weight matrix which represents the relation between nodes
 - it can be seen as self attention with artificially created mask
 
-## CV
+# CV
 High-Resolution Image Synthesis with Latent Diffusion Models [[Rombach+, CVPR22](https://arxiv.org/abs/2112.10752)]
 - LDM performs semactic compression and AE + GAN performs perceptual compression
 - the original paper of Stable Diffusion
 
-### Read Later
+## Read Later
 
 PeerNets: Exploiting Peer Wisdom Against Adversarial Attacks [[Svoboda+, 18](https://arxiv.org/abs/1806.00088)]
