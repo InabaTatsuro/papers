@@ -1,6 +1,11 @@
 
 # MIR
 ## Music Generation
+Compound word transformer: Learning to compose full-song music over dynamic directed hypergraphs [AAAI21][[#27](https://github.com/InabaTatsuro/papers/issues/27)]
+- group consecutive and related tokens into compound words to capture the co-occurrence relationship
+- 5-10 times faster at training with comparable quality
+- CP transformer can be seen as the hyperedge prediction
+
 PopMAG: Pop Music Accompaniment Generation [[ACM20](https://arxiv.org/abs/2008.07703)][[#26](https://github.com/InabaTatsuro/papers/issues/26)]
 - Multitrack-MIDI representation (MuMIDI) enables simultaneous multi-track generation in a single sequence
 - model multiple note attributes of a musical note in one step and use the architecture of transformerXL to capture the long-term dependencies
