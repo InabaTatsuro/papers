@@ -48,7 +48,7 @@ Graph-based Polyphonic Multitrack Music Generation [[Cosenza+, 23/7](https://arx
 - Not good performance
 
 ## Symbolic Music Understanding
-MusicBERT: Symbolic Music Understanding with Large-Scale Pre-Training [[ACL finding21](https://aclanthology.org/2021.findings-acl.70/)]
+MusicBERT: Symbolic Music Understanding with Large-Scale Pre-Training [[ACL finding21](https://aclanthology.org/2021.findings-acl.70/)][[#28](https://github.com/InabaTatsuro/papers/issues/28)]
 - Pre-train BERT with 1.5M MIDI files which is private and created by the Microsoft Research Asia
 - use OctupleMIDI encoding and bar-level masking strategy to enhance symbolic music data
 
