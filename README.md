@@ -1,6 +1,6 @@
 
 # MIR
-## Music Generation
+## Symbolic Music Generation
 Compound word transformer: Learning to compose full-song music over dynamic directed hypergraphs [AAAI21][[#27](https://github.com/InabaTatsuro/papers/issues/27)]
 - group consecutive and related tokens into compound words to capture the co-occurrence relationship
 - 5-10 times faster at training with comparable quality
@@ -42,15 +42,21 @@ Music Transformer [[Huang+, ICLR19](https://arxiv.org/abs/1809.04281)][[#10](htt
 - Generate symbolic music by transformers with relative position-based attention
 - reduce the memory requirements in relative position-based attention by "skewing"
 
+Graph-based Polyphonic Multitrack Music Generation [[Cosenza+, 23/7](https://arxiv.org/abs/2307.14928)][[#1](https://github.com/InabaTatsuro/papers/issues/1)]
+- Use graph to represent multitrack music score
+- Train GCN and VAE to generate graph (music)
+- Not good performance
+
+## Symbolic Music Understanding
+MusicBERT: Symbolic Music Understanding with Large-Scale Pre-Training [[ACL finding21](https://aclanthology.org/2021.findings-acl.70/)]
+- Pre-train BERT with 1.5M MIDI files which is private and created by the Microsoft Research Asia
+- use OctupleMIDI encoding and bar-level masking strategy to enhance symbolic music data
+
 Graph Neural Network for Music Score Data and Modeling Expressive Piano Performance [[Jeong+, ICML19](https://proceedings.mlr.press/v97/jeong19a.html)][[[#6](https://github.com/InabaTatsuro/papers/issues/6)]]
 - Use GNN and LSTM with Hierarchical Attention Network to generate expressive piano performance
 - GNN captures the nodes information in a measure and LSTM w/HAN captures the measures information
 - Let the node have nodes information in other measures by updating iteratively
 
-Graph-based Polyphonic Multitrack Music Generation [[Cosenza+, 23/7](https://arxiv.org/abs/2307.14928)][[#1](https://github.com/InabaTatsuro/papers/issues/1)]
-- Use graph to represent multitrack music score
-- Train GCN and VAE to generate graph (music)
-- Not good performance
 
 ### Survey
 A Survey on Deep Learning for Symbolic Music Generation [[ACM23/8](https://dl.acm.org/doi/abs/10.1145/3597493)][[#25](https://github.com/InabaTatsuro/papers/issues/25)]
