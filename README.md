@@ -1,6 +1,11 @@
 
 # MIR
 ## Symbolic Music Generation
+Multitrack Music Transformer [ICASSP23][[#29](https://github.com/InabaTatsuro/papers/issues/29)]
+- propose MMT, multitrack music representation for symbolic music generation can reduce memory usage
+- multitrack symbolic music generation by using MMT
+  - Continuation, scratch generation, instrument informed generation
+
 Compound word transformer: Learning to compose full-song music over dynamic directed hypergraphs [AAAI21][[#27](https://github.com/InabaTatsuro/papers/issues/27)]
 - group consecutive and related tokens into compound words to capture the co-occurrence relationship
 - 5-10 times faster at training with comparable quality
@@ -48,6 +53,11 @@ Graph-based Polyphonic Multitrack Music Generation [[Cosenza+, 23/7](https://arx
 - Not good performance
 
 ## Symbolic Music Understanding
+PiRhDy: Learning Pitch-, Rhythm-, and Dynamics-aware Embeddings for Symbolic Music[ACM20][#30]
+- generate music note embeddings
+- (1) token modeling: separately represents pitch, rhythm, and dynamics and integrates them into a single token embedding
+- (2) context modeling: use melodic and harmonic embedding to train the token embedding
+
 MusicBERT: Symbolic Music Understanding with Large-Scale Pre-Training [[ACL finding21](https://aclanthology.org/2021.findings-acl.70/)][[#28](https://github.com/InabaTatsuro/papers/issues/28)]
 - Pre-train BERT with 1.5M MIDI files which is private and created by the Microsoft Research Asia
 - use OctupleMIDI encoding and bar-level masking strategy to enhance symbolic music data
@@ -92,7 +102,12 @@ Transformer vae: A hierarchical model for structure-aware and interpretable musi
 
 
 # NLP
-## Architecture
+## Text Generation
+InCoder: A Generative Model for Code Infilling and Synthesis [ICLR23][[#32](https://github.com/InabaTatsuro/papers/issues/32)]
+- InCoder can infill the program via left-to-right generation
+- train by maximizing logP([left; <mask>; right; <mask>; span; <EOM>]) and inference by sampling tokens autoregressively from the distributions P(・| [left; <mask>; right; <mask>])
+
+## Text Classification
 Hierarchical Attention Networks for Document Classification [[Yang+, 16](https://www.cs.cmu.edu/~./hovy/papers/16HLT-hierarchical-attention-networks.pdf)][[#8](https://github.com/InabaTatsuro/papers/issues/8)]
 - HAN can capture the insights of the hierarchical structure (words form sentences, sentences form a document) and the difference in importance of each word and sentence
 
@@ -100,6 +115,12 @@ Hierarchical Attention Networks for Document Classification [[Yang+, 16](https:/
 WhitenedCSE: Whitening-based Contrastive Learning of Sentence Embeddings [[Gao+, ACL23](https://arxiv.org/abs/2104.08821)][[#5](https://github.com/InabaTatsuro/papers/issues/5)]
 - SimCSE + whitening
 - whitening means the transformation of the data to have a mean of zero and a covariance matrix of the identity matrix
+
+## Positional embedding
+On Positional embeddings in BERT [ICLR21][#31]
+- analyze Positional Embeddings (PEs) based on 3 properties, translational invariance, monotonicity, and symmetry
+- breaking translational invariance and monotonicity degrades downstream task performance while breaking symmetry improves downstream task performance
+- fully learnable absolute position embedding generally improves performance on the classification task, while relative position embedding improves performance on the span prediction task
 
 ## Read Later
 Locating and Editing Factual Associations in GPT [[Meng+, NeurIPS22](https://openreview.net/forum?id=-h6WAS6eE4)]
