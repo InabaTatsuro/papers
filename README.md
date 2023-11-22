@@ -53,7 +53,7 @@ Graph-based Polyphonic Multitrack Music Generation [[Cosenza+, 23/7](https://arx
 - Not good performance
 
 ## Symbolic Music Understanding
-PiRhDy: Learning Pitch-, Rhythm-, and Dynamics-aware Embeddings for Symbolic Music[ACM20][#30]
+PiRhDy: Learning Pitch-, Rhythm-, and Dynamics-aware Embeddings for Symbolic Music[ACM20][[#30](https://github.com/InabaTatsuro/papers/issues/30)]
 - generate music note embeddings
 - (1) token modeling: separately represents pitch, rhythm, and dynamics and integrates them into a single token embedding
 - (2) context modeling: use melodic and harmonic embedding to train the token embedding
@@ -117,7 +117,7 @@ WhitenedCSE: Whitening-based Contrastive Learning of Sentence Embeddings [[Gao+,
 - whitening means the transformation of the data to have a mean of zero and a covariance matrix of the identity matrix
 
 ## Positional embedding
-On Positional embeddings in BERT [ICLR21][#31]
+On Positional embeddings in BERT [ICLR21][[#31](https://github.com/InabaTatsuro/papers/issues/31)]
 - analyze Positional Embeddings (PEs) based on 3 properties, translational invariance, monotonicity, and symmetry
 - breaking translational invariance and monotonicity degrades downstream task performance while breaking symmetry improves downstream task performance
 - fully learnable absolute position embedding generally improves performance on the classification task, while relative position embedding improves performance on the span prediction task
