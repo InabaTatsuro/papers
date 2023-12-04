@@ -1,6 +1,10 @@
 
 # MIR
 ## Symbolic Music Generation
+Vector Quantized Contrastive Predictive Coding for Template-based Music Generation [20, [#36](https://github.com/InabaTatsuro/papers/issues/36)]
+- given a template sequence, generate novel sequences sharing perceptible similarities with the original template
+- encode and quantize the template sequence followed by decoding to generate variations
+
 Multitrack Music Transformer [ICASSP23][[#29](https://github.com/InabaTatsuro/papers/issues/29)]
 - propose MMT, multitrack music representation for symbolic music generation can reduce memory usage
 - multitrack symbolic music generation by using MMT
@@ -96,10 +100,6 @@ Transformer vae: A hierarchical model for structure-aware and interpretable musi
 - NSynth
 - MuseNet
 - SDMuse
-
-
-
-
 
 # NLP
 ## Text Generation
