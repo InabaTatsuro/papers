@@ -5,6 +5,11 @@ Vector Quantized Contrastive Predictive Coding for Template-based Music Generati
 - given a template sequence, generate novel sequences sharing perceptible similarities with the original template
 - encode and quantize the template sequence followed by decoding to generate variations
 
+MMM : Exploring Conditional Multi-Track Music Generation [ArXiv20, [#34](https://github.com/InabaTatsuro/papers/issues/34)]
+- Multitrack inpainting, using event level token representation and transformer
+- replace the sequences of the bar representation which we want to predict into the token, and add the token to the last
+- no quantitative results, only method and demo
+
 Multitrack Music Transformer [ICASSP23][[#29](https://github.com/InabaTatsuro/papers/issues/29)]
 - propose MMT, multitrack music representation for symbolic music generation can reduce memory usage
 - multitrack symbolic music generation by using MMT
@@ -168,6 +173,10 @@ Graph Attention Networks [[Velickovic+, ICLR18](https://arxiv.org/abs/1710.10903
 - it can be seen as self attention with artificially created mask
 
 # CV
+GibbsDDRM: A Partially Collapsed Gibbs Sampler for Solving Blind Inverse Problems with Denoising Diffusion Restoration [ICML23, [#35](https://github.com/InabaTatsuro/papers/issues/35)]
+- solve linear inverse problems using denoising diffusion restoration
+- it can be used in cases where the linear operator is unknown
+
 High-Resolution Image Synthesis with Latent Diffusion Models [[Rombach+, CVPR22](https://arxiv.org/abs/2112.10752)]
 - LDM performs semactic compression and AE + GAN performs perceptual compression
 - the original paper of Stable Diffusion
