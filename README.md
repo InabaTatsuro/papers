@@ -1,4 +1,3 @@
-
 # MIR
 ## Symbolic Music Generation
 Vector Quantized Contrastive Predictive Coding for Template-based Music Generation [20, [#36](https://github.com/InabaTatsuro/papers/issues/36)]
@@ -76,6 +75,10 @@ Graph Neural Network for Music Score Data and Modeling Expressive Piano Performa
 - GNN captures the nodes information in a measure and LSTM w/HAN captures the measures information
 - Let the node have nodes information in other measures by updating iteratively
 
+## Audio Music Generation
+ERNIE-Music: Text-to-Waveform Music Generation with Diffusion Models [AACLdemo23, [#37](https://github.com/InabaTatsuro/papers/issues/37)]
+- use the diffusion model to generate music conditioned by free-form text
+- outperform the previous models in terms of text-music relevance and music quality, as judged by human
 
 ### Survey
 A Survey on Deep Learning for Symbolic Music Generation [[ACM23/8](https://dl.acm.org/doi/abs/10.1145/3597493)][[#25](https://github.com/InabaTatsuro/papers/issues/25)]
