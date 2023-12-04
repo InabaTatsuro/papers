@@ -1,5 +1,8 @@
 # MIR
 ## Symbolic Music Generation
+Exploring the Efficacy of Pre-trained Checkpoints in Text-to-Music Generation Task [AAAI23 workshop, [#38](https://github.com/InabaTatsuro/papers/issues/38)]
+- given text, generate symbolic music using pre-trained language models like BERT, GPT-2, and BART
+- the model that initializes the parameters by BART outperformed the model that initializes parameters randomly
 
 Mubert [[github](https://github.com/MubertAI/Mubert-Text-to-Music)]
 - generate music from free text prompt
