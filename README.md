@@ -1,5 +1,9 @@
 # MIR
 ## Symbolic Music Generation
+FIGARO: Generating Symbolic Music with Fine-Grained Artistic Control [ICLR23, [#39](https://github.com/InabaTatsuro/papers/issues/39)]
+- FIne-grained music Generation via Attention-based, RObust control (FIGARO) by applying description-to-sequence modelling
+- combine learned high-level features with domain knowledge which acts as a strong inductive bias
+
 Exploring the Efficacy of Pre-trained Checkpoints in Text-to-Music Generation Task [AAAI23 workshop, [#38](https://github.com/InabaTatsuro/papers/issues/38)]
 - given text, generate symbolic music using pre-trained language models like BERT, GPT-2, and BART
 - the model that initializes the parameters by BART outperformed the model that initializes parameters randomly
