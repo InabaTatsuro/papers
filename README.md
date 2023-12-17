@@ -1,5 +1,9 @@
 # MIR
 ## Symbolic Music Generation
+Infilling Piano Performances [[NeurIPS workshop18, [#40](https://github.com/InabaTatsuro/papers/issues/40)]
+- infill deleted section of MIDI by using the transformer
+- give {left context + special token + right context} to the model and generate the blanks
+
 FIGARO: Generating Symbolic Music with Fine-Grained Artistic Control [ICLR23, [#39](https://github.com/InabaTatsuro/papers/issues/39)]
 - FIne-grained music Generation via Attention-based, RObust control (FIGARO) by applying description-to-sequence modelling
 - combine learned high-level features with domain knowledge which acts as a strong inductive bias
