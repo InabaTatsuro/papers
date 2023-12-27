@@ -126,14 +126,17 @@ Transformer vae: A hierarchical model for structure-aware and interpretable musi
 
 # NLP
 ## Text Generation
-InCoder: A Generative Model for Code Infilling and Synthesis [ICLR23][[#32](https://github.com/InabaTatsuro/papers/issues/32)]
-- InCoder can infill the program via left-to-right generation
-- train by maximizing logP([left; <mask>; right; <mask>; span; <EOM>]) and inference by sampling tokens autoregressively from the distributions P(・| [left; <mask>; right; <mask>])
+Locally Typical Sampling [TACL22, [#42](https://github.com/InabaTatsuro/papers/issues/42)]
+- in each time t, create the local typical set, consisting of the words that have a probability close to the entropy of the predicted distribution
+- random sample from the local typical set
 
 Contrastive Decoding: Open-ended Text Generation as Optimization[ACl23, [#41](https://github.com/InabaTatsuro/papers/issues/41)]
 - decoding with maximum probability often results in short and repetitive text and sampling can often produce incoherent text
 - Contrastive Decoding (CD) is a reliable approach that optimizes a contrastive objective subject to a plausibility constraint
 
+InCoder: A Generative Model for Code Infilling and Synthesis [ICLR23][[#32](https://github.com/InabaTatsuro/papers/issues/32)]
+- InCoder can infill the program via left-to-right generation
+- train by maximizing logP([left; <mask>; right; <mask>; span; <EOM>]) and inference by sampling tokens autoregressively from the distributions P(・| [left; <mask>; right; <mask>])
 
 ## Text Classification
 Hierarchical Attention Networks for Document Classification [[Yang+, 16](https://www.cs.cmu.edu/~./hovy/papers/16HLT-hierarchical-attention-networks.pdf)][[#8](https://github.com/InabaTatsuro/papers/issues/8)]
