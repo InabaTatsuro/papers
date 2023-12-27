@@ -130,6 +130,11 @@ InCoder: A Generative Model for Code Infilling and Synthesis [ICLR23][[#32](http
 - InCoder can infill the program via left-to-right generation
 - train by maximizing logP([left; <mask>; right; <mask>; span; <EOM>]) and inference by sampling tokens autoregressively from the distributions P(・| [left; <mask>; right; <mask>])
 
+Contrastive Decoding: Open-ended Text Generation as Optimization[ACl23, [#41](https://github.com/InabaTatsuro/papers/issues/41)]
+- decoding with maximum probability often results in short and repetitive text and sampling can often produce incoherent text
+- Contrastive Decoding (CD) is a reliable approach that optimizes a contrastive objective subject to a plausibility constraint
+
+
 ## Text Classification
 Hierarchical Attention Networks for Document Classification [[Yang+, 16](https://www.cs.cmu.edu/~./hovy/papers/16HLT-hierarchical-attention-networks.pdf)][[#8](https://github.com/InabaTatsuro/papers/issues/8)]
 - HAN can capture the insights of the hierarchical structure (words form sentences, sentences form a document) and the difference in importance of each word and sentence
