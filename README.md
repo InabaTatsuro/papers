@@ -77,6 +77,10 @@ Graph-based Polyphonic Multitrack Music Generation [[Cosenza+, 23/7](https://arx
 - Not good performance
 
 ## Symbolic Music Understanding
+Multimodal Multifaceted Music Emotion Recognition Based on Self-Attentive Fusion of Psychology-Inspired Symbolic and Acoustic Features[APSIPA23, [#43](https://github.com/InabaTatsuro/papers/issues/43)]
+- Multimodal multifaceted MER method that uses features from MIDI and audio data based on musical psychology.
+- Self-attention mechanism can learn the complicated relationships between different features and fuse the
+
 PiRhDy: Learning Pitch-, Rhythm-, and Dynamics-aware Embeddings for Symbolic Music[ACM20][[#30](https://github.com/InabaTatsuro/papers/issues/30)]
 - generate music note embeddings
 - (1) token modeling: separately represents pitch, rhythm, and dynamics and integrates them into a single token embedding
