@@ -130,6 +130,9 @@ Transformer vae: A hierarchical model for structure-aware and interpretable musi
 
 # NLP
 ## Text Generation
+Decoding strategy [[zenn jp](https://zenn.dev/hellorusk/articles/1c0bef15057b1d)]
+- greedy, beam, top-k, top-p(nucleus)
+
 Locally Typical Sampling [TACL22, [#42](https://github.com/InabaTatsuro/papers/issues/42)]
 - in each time t, create the local typical set, consisting of the words that have a probability close to the entropy of the predicted distribution
 - random sample from the local typical set
