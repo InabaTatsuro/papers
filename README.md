@@ -1,5 +1,10 @@
 # MIR
 ## Symbolic Music Generation
+Composer's Assistant: An Interactive Transformer for Multi-Track MIDI Infilling [ISMIR23, [#44](https://github.com/InabaTatsuro/papers/issues/44)]
+- Train T5-like model to infill multi-track MIDI whose arbitrary track-measures have been deleted
+- The model can be used in the REAPER digital audio workstation(DAW)
+
+
 Infilling Piano Performances [[NeurIPS workshop18, [#40](https://github.com/InabaTatsuro/papers/issues/40)]
 - infill deleted section of MIDI by using the transformer
 - give {left context + special token + right context} to the model and generate the blanks
