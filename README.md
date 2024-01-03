@@ -4,7 +4,6 @@ Composer's Assistant: An Interactive Transformer for Multi-Track MIDI Infilling 
 - Train T5-like model to infill multi-track MIDI whose arbitrary track-measures have been deleted
 - The model can be used in the REAPER digital audio workstation(DAW)
 
-
 Infilling Piano Performances [[NeurIPS workshop18, [#40](https://github.com/InabaTatsuro/papers/issues/40)]
 - infill deleted section of MIDI by using the transformer
 - give {left context + special token + right context} to the model and generate the blanks
@@ -101,6 +100,10 @@ Graph Neural Network for Music Score Data and Modeling Expressive Piano Performa
 - Let the node have nodes information in other measures by updating iteratively
 
 ### Survey
+Data Collection in Music Generation Training Sets: A Critical Analysis [ISMIR23, [#45](https://github.com/InabaTatsuro/papers/issues/45)]
+- Analysis of all datasets used to train Automatic Music Generation (AMG) models presented at the last 10 editions of ISMIR
+- Discussed ethics and suggested the way to collect or use the dataset for AMG training
+
 A Survey on Deep Learning for Symbolic Music Generation [[ACM23/8](https://dl.acm.org/doi/abs/10.1145/3597493)][[#25](https://github.com/InabaTatsuro/papers/issues/25)]
 
 A Survey of AI Music Generation Tools and Models [[Zhu+, 23/8](https://arxiv.org/abs/2308.12982)][[#12](https://github.com/InabaTatsuro/papers/issues/12)]
