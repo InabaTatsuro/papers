@@ -18,15 +18,15 @@ Exploring the Efficacy of Pre-trained Checkpoints in Text-to-Music Generation Ta
 - the model that initializes the parameters by BART outperformed the model that initializes parameters randomly
 
 Mubert [[github](https://github.com/MubertAI/Mubert-Text-to-Music)]
-- generate music from free text prompt
-- this is not actual generation, but just combine the pre-composed music according to the rule
+- generate music from a free text prompt
+- this is not the actual generation, but just combines the pre-composed music according to the rule
 
 Vector Quantized Contrastive Predictive Coding for Template-based Music Generation [20, [#36](https://github.com/InabaTatsuro/papers/issues/36)]
 - given a template sequence, generate novel sequences sharing perceptible similarities with the original template
 - encode and quantize the template sequence followed by decoding to generate variations
 
 MMM : Exploring Conditional Multi-Track Music Generation [ArXiv20, [#34](https://github.com/InabaTatsuro/papers/issues/34)]
-- Multitrack inpainting, using event level token representation and transformer
+- Multitrack inpainting, using event-level token representation and transformer
 - replace the sequences of the bar representation which we want to predict into the token, and add the token to the last
 - no quantitative results, only method and demo
 
@@ -53,8 +53,8 @@ A Hierarchical Latent Vector Model for Learning Long-Term Structure in Music [[I
 - propose MusicVAE which uses the hierarchical latent vector model
 
 PopMNet: Generating structured pop music melodies using neural networks [[Wu+, 19](https://www.sciencedirect.com/science/article/abs/pii/S000437022030062X)]
-- CNN generate melody structure which is defined by pairwise relations, specifically and the sequence between all bars in a melody
-- RNN generate melodies conditioned on the structure and chord progression
+- CNN generates melody structure which is defined by pairwise relations, specifically the sequence between all bars in a melody
+- RNN generates melodies conditioned on the structure and chord progression
 
 A Hierarchical Recurrent Neural Network for Symbolic Melody Generation [[IEEE](https://arxiv.org/abs/1712.05274)]
 - factor melody generation into 3 sub-problems and each sub-problem is solved by each LSTM
@@ -64,7 +64,7 @@ MELONS: generating melody with long-term structure using transformers and struct
 - these sub-problems are solved by the linear transformer
 
 Pop Music Transformer: Beat-based Modeling and Generation of Expressive Pop Piano Compositions [[ACM20](https://arxiv.org/abs/2002.00212)][[#20](https://github.com/InabaTatsuro/papers/issues/20)]
-- propose REMI, new event representation of beat-based music
+- propose REMI, a new event representation of beat-based music
 - use Auto Transcription to get enough training data
 
 Museformer [[Yu+ NeurIPS22](https://arxiv.org/abs/2210.10349)][[#11](https://github.com/InabaTatsuro/papers/issues/11)]
@@ -77,7 +77,7 @@ Music Transformer [[Huang+, ICLR19](https://arxiv.org/abs/1809.04281)][[#10](htt
 - reduce the memory requirements in relative position-based attention by "skewing"
 
 Graph-based Polyphonic Multitrack Music Generation [[Cosenza+, 23/7](https://arxiv.org/abs/2307.14928)][[#1](https://github.com/InabaTatsuro/papers/issues/1)]
-- Use graph to represent multitrack music score
+- Use a graph to represent the multitrack music score
 - Train GCN and VAE to generate graph (music)
 - Not good performance
 
@@ -92,13 +92,13 @@ PiRhDy: Learning Pitch-, Rhythm-, and Dynamics-aware Embeddings for Symbolic Mus
 - (2) context modeling: use melodic and harmonic embedding to train the token embedding
 
 MusicBERT: Symbolic Music Understanding with Large-Scale Pre-Training [[ACL finding21](https://aclanthology.org/2021.findings-acl.70/)][[#28](https://github.com/InabaTatsuro/papers/issues/28)]
-- Pre-train BERT with 1.5M MIDI files which is private and created by the Microsoft Research Asia
+- Pre-train BERT with 1.5M MIDI files which are private and created by Microsoft Research Asia
 - use OctupleMIDI encoding and bar-level masking strategy to enhance symbolic music data
 
 Graph Neural Network for Music Score Data and Modeling Expressive Piano Performance [[Jeong+, ICML19](https://proceedings.mlr.press/v97/jeong19a.html)][[[#6](https://github.com/InabaTatsuro/papers/issues/6)]]
 - Use GNN and LSTM with Hierarchical Attention Network to generate expressive piano performance
-- GNN captures the nodes information in a measure and LSTM w/HAN captures the measures information
-- Let the node have nodes information in other measures by updating iteratively
+- GNN captures the node information in a measure and LSTM w/HAN captures the measure information
+- Let the node have node information in other measures by updating iteratively
 
 ### Audio Music Generation
 ERNIE-Music: Text-to-Waveform Music Generation with Diffusion Models [AACLdemo23, [#37](https://github.com/InabaTatsuro/papers/issues/37)]
@@ -117,12 +117,12 @@ A Survey of AI Music Generation Tools and Models [[Zhu+, 23/8](https://arxiv.org
 
 ### Read Later
 Modeling temporal tonal relations in polyphonic music through deep networks with a novel image-based representation [[Chuan+, AAAI18](https://ojs.aaai.org/index.php/AAAI/article/view/11880)]
-- mugic generation, convolution
+- music generation, convolution
 
 Counterpoint by Convolution [[Huang+, ISMIR17](https://arxiv.org/abs/1903.07227)]
 - music generation, convolution, inpainting, Gibbs sampling
 
-Musicaiz: A python library for symbolic music generation, analysis and visualization [[Olivan+, 23](https://carlosholivan.github.io/musicaiz/)]
+Musicaiz: A Python library for symbolic music generation, analysis, and visualization [[Olivan+, 23](https://carlosholivan.github.io/musicaiz/)]
 - Python の Symbolic Music Generation 用ライブラリ
 
 Cadence Detection in Symbolic Classical Music using Graph Neural Networks [[Karystinaios+, ISMIR22](https://arxiv.org/abs/2208.14819)]
@@ -137,6 +137,11 @@ Transformer vae: A hierarchical model for structure-aware and interpretable musi
 - NSynth
 - MuseNet
 - SDMuse
+
+## ASR
+Transformer ASR with Contextual Block Processing [ASRU19, [#47](https://github.com/InabaTatsuro/papers/issues/47)]
+- to capture global information (long dependency), introduce a context-aware inheritance mechanism into the transformer encoder
+- also introduce a noble mask technique to implement the above mechanism
 
 ## Beat Tracking
 BEAST: Online Joint Beat and Downbeat Tracking Based on Streaming Transformer [ICASSP24, [#46](https://github.com/InabaTatsuro/papers/issues/46)]
@@ -194,11 +199,11 @@ Global Self-Attention as a Replacement for Graph Convolution [[KDD22](https://ar
 - add edge information to the self-attention calculation
 
 Graph Transformer Networks [[Yun+, NeurIPS19](https://arxiv.org/abs/1911.06455)][[#17](https://github.com/InabaTatsuro/papers/issues/17)]
-- generate new meta-path which represents multi-hop relations and new-graph structure by multiplication of different adjacency matrix
+- generate a new meta-path that represents multi-hop relations and new-graph structure by multiplication of different adjacency matrix
 - can be applied to heterogeneous graph
 
 Graph Transformer [[Li+, 18](https://openreview.net/forum?id=HJei-2RcK7)][[#16](https://github.com/InabaTatsuro/papers/issues/16)]
-- evolve target graph by recurrently applying source-attention from source graph and self-attention from target graph
+- evolve the target graph by recurrently applying source-attention from the source graph and self-attention from the target graph
 - they can have different structure
 
 Attention Guided Graph Convolutional Networks for Relation Extraction [[Guo+, ACL19](https://aclanthology.org/P19-1024/)][[#15](https://github.com/InabaTatsuro/papers/issues/15)]
@@ -213,12 +218,12 @@ On the Global Self-attention Mechanism for Graph Convolutional Networks[[Wang+, 
 - GSA allows GCNs to capture feature-based vertex relations regardless of edge connections
 
 Self-Attention with Relative Position Representations [[Shaw, NAACL18](https://arxiv.org/abs/1803.02155)][[#9](https://github.com/InabaTatsuro/papers/issues/9)]
-- extend self-attention to consider the pairwise relationships between each elements
+- extend self-attention to consider the pairwise relationships between each element
 - Add the trainable relative position representations, and add them to key and query vectors
 
 Graph Attention Networks [[Velickovic+, ICLR18](https://arxiv.org/abs/1710.10903)][[#4](https://github.com/InabaTatsuro/papers/issues/4)]
 - train weight matrix which represents the relation between nodes
-- it can be seen as self attention with artificially created mask
+- it can be seen as self-attention with an artificially created mask
 
 # CV
 GibbsDDRM: A Partially Collapsed Gibbs Sampler for Solving Blind Inverse Problems with Denoising Diffusion Restoration [ICML23, [#35](https://github.com/InabaTatsuro/papers/issues/35)]
@@ -226,7 +231,7 @@ GibbsDDRM: A Partially Collapsed Gibbs Sampler for Solving Blind Inverse Problem
 - it can be used in cases where the linear operator is unknown
 
 High-Resolution Image Synthesis with Latent Diffusion Models [[Rombach+, CVPR22](https://arxiv.org/abs/2112.10752)]
-- LDM performs semactic compression and AE + GAN performs perceptual compression
+- LDM performs semantic compression and AE + GAN performs perceptual compression
 - the original paper of Stable Diffusion
 
 ## Read Later
