@@ -82,6 +82,10 @@ Graph-based Polyphonic Multitrack Music Generation [[Cosenza+, 23/7](https://arx
 - Not good performance
 
 ### Symbolic Music Understanding
+Impact of time and note duration tokenizations on deep learning symbolic music modeling [ISMIR23, [#48](https://github.com/InabaTatsuro/papers/issues/48)]
+- analyze the common tokenization methods and especially experiment with time and note duration representations
+- demonstrate that explicit information leads to better results depending on the tasks
+
 Multimodal Multifaceted Music Emotion Recognition Based on Self-Attentive Fusion of Psychology-Inspired Symbolic and Acoustic Features[APSIPA23, [#43](https://github.com/InabaTatsuro/papers/issues/43)]
 - Multimodal multifaceted MER method that uses features from MIDI and audio data based on musical psychology.
 - Self-attention mechanism can learn the complicated relationships between different features and fuse the
