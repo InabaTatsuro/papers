@@ -1,5 +1,9 @@
 # articles
 
+## HMM
+link: [電通大, HMM](http://www.takagi.inf.uec.ac.jp/swr/pdf/studentbook5.pdf)
+- Forward algorithm, Viterbi decoding
+
 ## 最適輸送と自然言語処理
 参考リンク: [[横井さん, NLP22](https://www.youtube.com/watch?v=vlCjNbVSyOc&t=1616s)]
 - [[#2](https://github.com/InabaTatsuro/papers/issues/2)]
@@ -11,4 +15,3 @@
 - [[#3](https://github.com/InabaTatsuro/papers/issues/3)]
 - spatial-based: ノード間の接続を明示的に利用してグラフ構造のまま特徴抽出
 - spectral-based: グラフフーリエ変換により周波数領域に変換後に操作を行う．その後逆変換によりグラフ構造に戻す
-
