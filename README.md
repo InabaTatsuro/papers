@@ -1,5 +1,6 @@
 # MIR
-## Symbolic Music Generation
+## Music Generation/Understanding
+### Symbolic Music Generation
 Composer's Assistant: An Interactive Transformer for Multi-Track MIDI Infilling [ISMIR23, [#44](https://github.com/InabaTatsuro/papers/issues/44)]
 - Train T5-like model to infill multi-track MIDI whose arbitrary track-measures have been deleted
 - The model can be used in the REAPER digital audio workstation(DAW)
@@ -80,7 +81,7 @@ Graph-based Polyphonic Multitrack Music Generation [[Cosenza+, 23/7](https://arx
 - Train GCN and VAE to generate graph (music)
 - Not good performance
 
-## Symbolic Music Understanding
+### Symbolic Music Understanding
 Multimodal Multifaceted Music Emotion Recognition Based on Self-Attentive Fusion of Psychology-Inspired Symbolic and Acoustic Features[APSIPA23, [#43](https://github.com/InabaTatsuro/papers/issues/43)]
 - Multimodal multifaceted MER method that uses features from MIDI and audio data based on musical psychology.
 - Self-attention mechanism can learn the complicated relationships between different features and fuse the
@@ -99,6 +100,11 @@ Graph Neural Network for Music Score Data and Modeling Expressive Piano Performa
 - GNN captures the nodes information in a measure and LSTM w/HAN captures the measures information
 - Let the node have nodes information in other measures by updating iteratively
 
+### Audio Music Generation
+ERNIE-Music: Text-to-Waveform Music Generation with Diffusion Models [AACLdemo23, [#37](https://github.com/InabaTatsuro/papers/issues/37)]
+- use the diffusion model to generate music conditioned by free-form text
+- outperform the previous models in terms of text-music relevance and music quality, as judged by human
+
 ### Survey
 Data Collection in Music Generation Training Sets: A Critical Analysis [ISMIR23, [#45](https://github.com/InabaTatsuro/papers/issues/45)]
 - Analysis of all datasets used to train Automatic Music Generation (AMG) models presented at the last 10 editions of ISMIR
@@ -108,12 +114,8 @@ A Survey on Deep Learning for Symbolic Music Generation [[ACM23/8](https://dl.ac
 
 A Survey of AI Music Generation Tools and Models [[Zhu+, 23/8](https://arxiv.org/abs/2308.12982)][[#12](https://github.com/InabaTatsuro/papers/issues/12)]
 
-## Audio Music Generation
-ERNIE-Music: Text-to-Waveform Music Generation with Diffusion Models [AACLdemo23, [#37](https://github.com/InabaTatsuro/papers/issues/37)]
-- use the diffusion model to generate music conditioned by free-form text
-- outperform the previous models in terms of text-music relevance and music quality, as judged by human
 
-## Read Later
+### Read Later
 Modeling temporal tonal relations in polyphonic music through deep networks with a novel image-based representation [[Chuan+, AAAI18](https://ojs.aaai.org/index.php/AAAI/article/view/11880)]
 - mugic generation, convolution
 
@@ -135,6 +137,11 @@ Transformer vae: A hierarchical model for structure-aware and interpretable musi
 - NSynth
 - MuseNet
 - SDMuse
+
+## Beat Tracking
+BEAST: Online Joint Beat and Downbeat Tracking Based on Streaming Transformer [ICASSP24, [#46](https://github.com/InabaTatsuro/papers/issues/46)]
+- Beat tracking streaming transformer (BEAST) is for online beat tracking and has a transformer-encoder with relative positional encoding
+- improvement of 5% in beat and 13% in downbeat over the SOTA model
 
 # NLP
 ## Text Generation
