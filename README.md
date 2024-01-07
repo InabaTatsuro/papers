@@ -1,6 +1,10 @@
 # MIR
 ## Music Generation/Understanding
 ### Symbolic Music Generation
+The Piano Inpainting Application [Sony21, [#49](https://github.com/InabaTatsuro/papers/issues/49)]
+- Structured MIDI Encoding is proposed and used to train Linear Transformer for infilling(inpainting)
+- use time-shift tokens instead of note-on/off or duration tokens
+
 Composer's Assistant: An Interactive Transformer for Multi-Track MIDI Infilling [ISMIR23, [#44](https://github.com/InabaTatsuro/papers/issues/44)]
 - Train T5-like model to infill multi-track MIDI whose arbitrary track-measures have been deleted
 - The model can be used in the REAPER digital audio workstation(DAW)
