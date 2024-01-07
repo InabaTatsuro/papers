@@ -1,4 +1,7 @@
 # articles
+## Decoding Strategy
+link: [zenn jp](https://zenn.dev/hellorusk/articles/1c0bef15057b1d)
+- greedy, beam, top-k, top-p(nucleus)
 
 ## HMM
 link: [電通大, HMM](http://www.takagi.inf.uec.ac.jp/swr/pdf/studentbook5.pdf)
