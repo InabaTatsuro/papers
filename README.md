@@ -56,9 +56,6 @@ PopMNet: Generating structured pop music melodies using neural networks [[Wu+, 1
 - CNN generates melody structure which is defined by pairwise relations, specifically the sequence between all bars in a melody
 - RNN generates melodies conditioned on the structure and chord progression
 
-A Hierarchical Recurrent Neural Network for Symbolic Melody Generation [[IEEE](https://arxiv.org/abs/1712.05274)]
-- factor melody generation into 3 sub-problems and each sub-problem is solved by each LSTM
-
 MELONS: generating melody with long-term structure using transformers and structure graph [[ICASSP22](https://arxiv.org/abs/2110.05020)][[#22](https://github.com/InabaTatsuro/papers/issues/18)]
 - factor melody generation into 2 sub-problems: structure generation and structure conditional melody generation
 - these sub-problems are solved by the linear transformer
@@ -154,9 +151,6 @@ BEAST: Online Joint Beat and Downbeat Tracking Based on Streaming Transformer [I
 
 # NLP
 ## Text Generation
-Decoding strategy [[zenn jp](https://zenn.dev/hellorusk/articles/1c0bef15057b1d)]
-- greedy, beam, top-k, top-p(nucleus)
-
 Locally Typical Sampling [TACL22, [#42](https://github.com/InabaTatsuro/papers/issues/42)]
 - in each time t, create the local typical set, consisting of the words that have a probability close to the entropy of the predicted distribution
 - random sample from the local typical set
@@ -233,10 +227,6 @@ Graph Attention Networks [[Velickovic+, ICLR18](https://arxiv.org/abs/1710.10903
 GibbsDDRM: A Partially Collapsed Gibbs Sampler for Solving Blind Inverse Problems with Denoising Diffusion Restoration [ICML23, [#35](https://github.com/InabaTatsuro/papers/issues/35)]
 - solve linear inverse problems using denoising diffusion restoration
 - it can be used in cases where the linear operator is unknown
-
-High-Resolution Image Synthesis with Latent Diffusion Models [[Rombach+, CVPR22](https://arxiv.org/abs/2112.10752)]
-- LDM performs semantic compression and AE + GAN performs perceptual compression
-- the original paper of Stable Diffusion
 
 ## Read Later
 
