@@ -16,3 +16,83 @@
 ### Note-level
 - MuMIDI(PopMAG), CP(Compound word transformer), OctupleMIDI(MusicBERT), Multitrack Music Transformer
   - compress the attributes of a note, including pitch, duration, and velocity into one symbol
+
+## Generation metrics (General)
+### Negative log-likelihood (NLL)
+<img width="400" alt="Screenshot 2024-01-09 at 1 03 18" src="https://github.com/InabaTatsuro/papers/assets/102784221/08362a12-48bc-4dfd-8b6e-a134a112218b">
+
+- smaller values are better
+- e.g., Music Transformer
+
+### perplexity
+<img width="400" alt="Screenshot 2024-01-09 at 1 04 41" src="https://github.com/InabaTatsuro/papers/assets/102784221/e4a2685b-60bc-4d1a-83fe-42c29027cb8c">
+
+- smaller values are better
+- e.g., Museformer
+
+### empty bars (EB)
+- the ratio of empty bars
+- values closer to the original data are better
+- e.g., MuseGAN
+
+### used pitch classes (UPC)
+- the number of used pitch classes per bar
+- values closer to the original data are better
+- e.g., MuseGAN
+
+### qualified notes (QN)
+- the ratio of qualified notes that are no shorter than a time step(i.e. a 32th note)
+- values closer to the original data are better
+- e.g., MuseGAN
+
+### Drum Pattern (DP)
+- the ratio of notes in 8- or 16-beat patterns
+- values closer to the original data are better
+- e.g., MuseGAN
+
+### Tonal Distance (TD)
+- the harmonicity between a pair of tracks
+- smaller values are better
+- e.g., MuseGAN
+
+### Beat/Downbeat STD
+- convert the generated symbolic music into audio music and evaluate by beat tracking model
+- values closer to the original data are better
+- e.g., Pop music transformer
+
+### Human Eval
+- number of wins
+  - e.g., Music Transformer
+- harmonious
+  - e.g., MuseGAN
+- rhythmic
+  - e.g., MuseGAN
+- musically structured
+  - e.g., MuseGAN
+- coherent
+  - e.g., MuseGAN
+- overall rating, overall score
+  - e.g., MuseGAN, Museformer
+- musicality
+  - e.g., Museformer
+
+- distinguish pro and non-pro
+  - e.g., Pop Music Transformer
+- p-value
+  - e.g., Pop Music Transformer
+
+## Generation metrics (Specific)
+### Similarity Error (SE)
+- the error between the similarity distribution of original data and generated music
+- smaller values are better
+
+### Human Eval
+- short-term structure
+  - e.g., Museformer
+- long-term structure
+  - e.g., Museformer
+ 
+## Generation Analysis
+### similarity distribution
+- to analyze the repetition
+  - e.g., Museformer
