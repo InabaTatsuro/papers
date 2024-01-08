@@ -1,6 +1,11 @@
 # MIR
 ## Music Generation/Understanding
 ### Symbolic Music Generation
+Anticipation-RNN: Enforcing unary constraints in sequence generation, with application to interactive music generation [NCAA18, https://github.com/InabaTatsuro/papers/issues/50]
+- anticipation-RNN can enforce user-defined unary constraints
+- one RNN is used to encode the constraints and the other one is used to generate the sequence with the constraint information
+- the constraints are fed reversely into RNNs, so the decoder (the other one) can use the future constraint information
+
 The Piano Inpainting Application [Sony21, [#49](https://github.com/InabaTatsuro/papers/issues/49)]
 - Structured MIDI Encoding is proposed and used to train Linear Transformer for infilling(inpainting)
 - use time-shift tokens instead of note-on/off or duration tokens
