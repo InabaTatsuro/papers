@@ -60,39 +60,40 @@
 - values closer to the original data are better
 - e.g., Pop music transformer
 
+### Inference speed
+- notes per second
+- e.g., MMT
+
 ### Human Eval
 - number of wins
   - e.g., Music Transformer
-- harmonious
+- harmonious/rhythmic/musically structured/coherent/overall rating
   - e.g., MuseGAN
-- rhythmic
-  - e.g., MuseGAN
-- musically structured
-  - e.g., MuseGAN
-- coherent
-  - e.g., MuseGAN
-- overall rating, overall score
-  - e.g., MuseGAN, Museformer
-- musicality
+- musicality/short-term structure/long-term structure/overall/overall score/preference
   - e.g., Museformer
+- structure/richness/pleasure/overall
+  - e.g., MELON
+- coherence/richness/arrangement/overall
+  - e.g., MMT
 
 - distinguish pro and non-pro
   - e.g., Pop Music Transformer
 - p-value
   - e.g., Pop Music Transformer
+ 
 
 ## Generation metrics (Specific)
 ### Similarity Error (SE)
 - the error between the similarity distribution of original data and generated music
 - smaller values are better
+- e.g., Museformer
 
-### Human Eval
-- short-term structure
-  - e.g., Museformer
-- long-term structure
-  - e.g., Museformer
  
 ## Generation Analysis
 ### similarity distribution
 - to analyze the repetition
-  - e.g., Museformer
+- e.g., Museformer
+
+### Attention gain
+- e.g., MMT
+
