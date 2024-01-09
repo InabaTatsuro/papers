@@ -73,6 +73,10 @@
 ### Groove similarity
 - higher values are better
 
+### MIREX-like prediction test(≒PPL, NLL)
+- choose the correct answer from 4 choices by calculating the average probability of generating the event
+- e.g., Jazz transformer, XLNet Piano Infilling
+
 ### Human Eval
 - number of wins
   - e.g., Music Transformer
@@ -90,8 +94,6 @@
 - distinguish pro and non-pro, p-value
   - e.g., Pop Music Transformer
  
-
-## Generation metrics (Specific)
 ### Similarity Error (SE)
 - the error between the similarity distribution of original data and generated music
 - smaller values are better
