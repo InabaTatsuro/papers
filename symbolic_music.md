@@ -60,9 +60,18 @@
 - values closer to the original data are better
 - e.g., Pop music transformer
 
-### Inference speed
-- notes per second
-- e.g., MMT
+### Note F1
+- match if generated onset, measure, pitch, track match exactly those of original
+- higher values are better
+- e.g., MT3, Composer Assistant
+
+### Pitch class histogram entropy difference
+- Drums are ignored
+- lower values are better
+- e.g., Composer Assistant, XLNet
+
+### Groove similarity
+- higher values are better
 
 ### Human Eval
 - number of wins
@@ -75,10 +84,10 @@
   - e.g., MELON
 - coherence/richness/arrangement/overall
   - e.g., MMT
+- average rank, p-value
+  - e.g., composer's assistant
 
-- distinguish pro and non-pro
-  - e.g., Pop Music Transformer
-- p-value
+- distinguish pro and non-pro, p-value
   - e.g., Pop Music Transformer
  
 
@@ -88,7 +97,10 @@
 - smaller values are better
 - e.g., Museformer
 
- 
+### Inference speed
+- notes per second
+- e.g., MMT
+
 ## Generation Analysis
 ### similarity distribution
 - to analyze the repetition
