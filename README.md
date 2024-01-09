@@ -1,6 +1,10 @@
 # MIR
 ## Music Generation/Understanding
 ### Symbolic Music Generation
+Variable-Length Music Score Infilling via XLNet and Musically Specialized Positional Encoding [ISMIR21, [#51](https://github.com/InabaTatsuro/papers/issues/51)]
+- can infill a variable number of notes (up to 128) for different time spans
+- use CP, XLNet, relative bar encoding, and look-ahead onset prediction
+
 Anticipation-RNN: Enforcing unary constraints in sequence generation, with application to interactive music generation [NCAA18, https://github.com/InabaTatsuro/papers/issues/50]
 - anticipation-RNN can enforce user-defined unary constraints
 - one RNN is used to encode the constraints and the other one is used to generate the sequence with the constraint information
