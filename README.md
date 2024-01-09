@@ -1,6 +1,10 @@
 # MIR
 ## Music Generation/Understanding
 ### Symbolic Music Generation
+Melody Infilling with User-Provided Structural Context [ISMIR22, [#52](https://github.com/InabaTatsuro/papers/issues/52)]
+- encoder-decoder transformer model for structure-aware conditioning infilling
+- use the bar-count-down technique and order embeddings to control the length and attention-selecting module that allows the model to access multiple structural contexts while infilling
+
 Variable-Length Music Score Infilling via XLNet and Musically Specialized Positional Encoding [ISMIR21, [#51](https://github.com/InabaTatsuro/papers/issues/51)]
 - can infill a variable number of notes (up to 128) for different time spans
 - use CP, XLNet, relative bar encoding, and look-ahead onset prediction
