@@ -157,6 +157,10 @@ Transformer vae: A hierarchical model for structure-aware and interpretable musi
 - SDMuse
 
 ## ASR
+Contrastive Learning for Improving ASR Robustness in Spoken Language Understanding [ICASSP22, [#53](https://github.com/InabaTatsuro/papers/issues/53)]
+- improve the ASR robustness by contrastive pretraining of RoBERTa
+- fine-tuning with self-distillation to reduce the label noises due to ASR errors
+
 Transformer ASR with Contextual Block Processing [ASRU19, [#47](https://github.com/InabaTatsuro/papers/issues/47)]
 - to capture global information (long dependency), introduce a context-aware inheritance mechanism into the transformer encoder
 - also introduce a noble mask technique to implement the above mechanism
