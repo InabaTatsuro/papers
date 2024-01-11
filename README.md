@@ -1,6 +1,10 @@
 # MIR
 ## Music Generation/Understanding
 ### Symbolic Music Generation
+Compose & Embellish: Well-Structured Piano Performance Generation via A Two-Stage Approach [ICASSP23, [#54](https://github.com/InabaTatsuro/papers/issues/54)]
+- a transformer model generates a lead sheet and then another transformer model generates all sequences
+- a lead sheet consists of melody, chords, and structure information(like ABA*B*) of each bar
+
 Melody Infilling with User-Provided Structural Context [ISMIR22, [#52](https://github.com/InabaTatsuro/papers/issues/52)]
 - encoder-decoder transformer model for structure-aware conditioning infilling
 - use the bar-count-down technique and order embeddings to control the length and attention-selecting module that allows the model to access multiple structural contexts while infilling
