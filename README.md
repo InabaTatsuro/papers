@@ -123,6 +123,10 @@ Graph Neural Network for Music Score Data and Modeling Expressive Piano Performa
 - Let the node have node information in other measures by updating iteratively
 
 ### Audio Music Generation
+Mustango: Toward Controllable Text-to-Music Generation [23/11, [#55](https://github.com/InabaTatsuro/papers/issues/55)]
+- Mustango expands Tango(text-to-audio) model and controls with general text and specific text(related to chords, beats, tempo, key)
+- MusicBench datasets comprise 5479 audio clips (each has 10sec)
+
 ERNIE-Music: Text-to-Waveform Music Generation with Diffusion Models [AACLdemo23, [#37](https://github.com/InabaTatsuro/papers/issues/37)]
 - use the diffusion model to generate music conditioned by free-form text
 - outperform the previous models in terms of text-music relevance and music quality, as judged by human
