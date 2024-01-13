@@ -1,6 +1,10 @@
 # MIR
 ## Music Generation/Understanding
 ### Symbolic Music Generation
+TeleMelody: Lyric-to-Melody Generation with a Template-Based Two-Stage Method [EMNLP22, [#56](https://github.com/InabaTatsuro/papers/issues/56)]
+- two-stage system, lyrics-to-template and template-to-melody
+- generated melody can be controlled by adjusting the template
+
 Compose & Embellish: Well-Structured Piano Performance Generation via A Two-Stage Approach [ICASSP23, [#54](https://github.com/InabaTatsuro/papers/issues/54)]
 - a transformer model generates a lead sheet and then another transformer model generates all sequences
 - a lead sheet consists of melody, chords, and structure information(like ABA*B*) of each bar
