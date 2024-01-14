@@ -211,6 +211,11 @@ On Positional embeddings in BERT [ICLR21][[#31](https://github.com/InabaTatsuro/
 - breaking translational invariance and monotonicity degrades downstream task performance while breaking symmetry improves downstream task performance
 - fully learnable absolute position embedding generally improves performance on the classification task, while relative position embedding improves performance on the span prediction task
 
+## MT
+Jointly Learning to Align and Translate with Transformer Models [EMNLP19, [#57](https://github.com/InabaTatsuro/papers/issues/55)]
+- train the transformer for both translation and word alignment tasks.
+- transformer models produce translations and interpretable alignments simultaneously by a multi-task framework
+
 ## Read Later
 Locating and Editing Factual Associations in GPT [[Meng+, NeurIPS22](https://openreview.net/forum?id=-h6WAS6eE4)]
 
