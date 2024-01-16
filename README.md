@@ -1,6 +1,15 @@
 # MIR
 ## Music Generation/Understanding
 ### Symbolic Music Generation
+Theme Transformer: Symbolic Music Generation with Theme-Conditioned Transformer [IEEE transaction on multimedia, [#59](https://github.com/InabaTatsuro/papers/issues/59)]
+- Explicitly train the transformer to treat the conditioning sequence as a thematic material that manifests itself multiple times.
+- Contrastive representation learning and clustering for retrieving thematic materials
+- Gated parallel attention module to more effectively account for a given conditioning thematic materials
+
+CLaMP: Contrastive Language-Music Pre-training for Cross-Modal Symbolic Music Information Retrieval [ISMIR23, [#58](https://github.com/InabaTatsuro/papers/issues/58)]
+- trained text and symbolic music(ABC notation) with contrastive loss
+- text dropout(data augmentation), bar patching(compound characters), masked music model pretraining(mask, shuffle, unchanged).
+
 TeleMelody: Lyric-to-Melody Generation with a Template-Based Two-Stage Method [EMNLP22, [#56](https://github.com/InabaTatsuro/papers/issues/56)]
 - two-stage system, lyrics-to-template and template-to-melody
 - generated melody can be controlled by adjusting the template
