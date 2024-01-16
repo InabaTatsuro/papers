@@ -1,3 +1,6 @@
+## link
+- [ISMIR23-intro1](https://docs.google.com/presentation/d/1AB27cUQzXaKbZlh3xtOCTWHR-PdWWXrF8K9xROFoNvk/edit?usp=sharing), [ISMIR23-intro2](https://docs.google.com/presentation/d/1qPPOfn8YDNIvpnGZFvx8UVYLuA8iXiHKK8OJgq7RSiM/edit?usp=sharing)
+
 ## Representation
 ### Piano-roll like
 2-dimensional matrix, where one dimension represents time and the other represents pitch
