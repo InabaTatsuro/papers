@@ -2,7 +2,6 @@
 ## Music Generation/Understanding
 ### Symbolic Music Generation
 
-
 Structure-Enhanced Pop Music Generation via Harmony-Aware Learning [ACM-MM22, [#62](https://github.com/InabaTatsuro/papers/issues/62)]
 - Harmony Aware hierarchical music Transformer (HAT) can model the harmony information, texture and form, by updating token representation
 - the updated representation can be used for the task of understanding and generation and the model is better in the form and texture
@@ -199,6 +198,10 @@ BEAST: Online Joint Beat and Downbeat Tracking Based on Streaming Transformer [I
 
 # NLP
 ## Text Generation
+QiuNiu: A Chinese Lyrics Generation System with Passage-Level Input [ACL22, [#63](https://github.com/InabaTatsuro/papers/issues/63)]
+- given passage-level text as input, QiuNiu generates lyrics that reflect the nuances of the user's need
+- A two-step process(3 types of loss) to fine-tune the UMT model of QuiNiu and a post-process(score classifier and n-gram based reranking) are used
+
 Locally Typical Sampling [TACL22, [#42](https://github.com/InabaTatsuro/papers/issues/42)]
 - in each time t, create the local typical set, consisting of the words that have a probability close to the entropy of the predicted distribution
 - random sample from the local typical set
