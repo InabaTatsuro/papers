@@ -198,6 +198,10 @@ BEAST: Online Joint Beat and Downbeat Tracking Based on Streaming Transformer [I
 
 # NLP
 ## Text Generation
+ChipSong: A Controllable Lyric Generation System for Chinese Popular Song [ACL22, [#64](https://github.com/InabaTatsuro/papers/issues/64)]
+- the model generates lyrics based on the given word-level length format, sentence-level length format, trigger word, and rhyme
+- BIE Word-granularity embedding/attention for the length control and reverse order for rhyme control
+
 QiuNiu: A Chinese Lyrics Generation System with Passage-Level Input [ACL22, [#63](https://github.com/InabaTatsuro/papers/issues/63)]
 - given passage-level text as input, QiuNiu generates lyrics that reflect the nuances of the user's need
 - A two-step process(3 types of loss) to fine-tune the UMT model of QuiNiu and a post-process(score classifier and n-gram based reranking) are used
