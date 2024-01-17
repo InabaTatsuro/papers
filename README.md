@@ -1,6 +1,12 @@
 # MIR
 ## Music Generation/Understanding
 ### Symbolic Music Generation
+
+
+Structure-Enhanced Pop Music Generation via Harmony-Aware Learning [ACM-MM22, [#62](https://github.com/InabaTatsuro/papers/issues/62)]
+- Harmony Aware hierarchical music Transformer (HAT) can model the harmony information, texture and form, by updating token representation
+- the updated representation can be used for the task of understanding and generation and the model is better in the form and texture
+
 Theme Transformer: Symbolic Music Generation with Theme-Conditioned Transformer [IEEE transaction on multimedia, [#59](https://github.com/InabaTatsuro/papers/issues/59)]
 - Explicitly train the transformer to treat the conditioning sequence as a thematic material that manifests itself multiple times.
 - Contrastive representation learning and clustering for retrieving thematic materials
