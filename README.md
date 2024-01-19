@@ -2,6 +2,10 @@
 ## Music Generation/Understanding
 ### Symbolic Music Generation
 
+MusIAC: An extensible generative framework for Music Infilling Applications with multi-level Control [EvoMUSART22, [#65](https://github.com/InabaTatsuro/papers/issues/65)]
+- Add 6 types of control tokens for user control to REMI representation
+
+
 Structure-Enhanced Pop Music Generation via Harmony-Aware Learning [ACM-MM22, [#62](https://github.com/InabaTatsuro/papers/issues/62)]
 - Harmony Aware hierarchical music Transformer (HAT) can model the harmony information, texture and form, by updating token representation
 - the updated representation can be used for the task of understanding and generation and the model is better in the form and texture
