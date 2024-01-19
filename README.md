@@ -1,10 +1,12 @@
 # MIR
 ## Music Generation/Understanding
 ### Symbolic Music Generation
+Motif-Centric Representation Learning for Symbolic Music [arXiv23/9, [#66](https://github.com/InabaTatsuro/papers/issues/66)]
+- Use VICReg, the training method in which no negative samples are used, for pretraining the model and use contrastive learning for finetuning
+- to reduce the influence of randomly selected negative samples that have similar segments with positive samples
 
 MusIAC: An extensible generative framework for Music Infilling Applications with multi-level Control [EvoMUSART22, [#65](https://github.com/InabaTatsuro/papers/issues/65)]
 - Add 6 types of control tokens for user control to REMI representation
-
 
 Structure-Enhanced Pop Music Generation via Harmony-Aware Learning [ACM-MM22, [#62](https://github.com/InabaTatsuro/papers/issues/62)]
 - Harmony Aware hierarchical music Transformer (HAT) can model the harmony information, texture and form, by updating token representation
