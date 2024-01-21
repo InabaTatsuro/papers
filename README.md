@@ -1,6 +1,10 @@
 # MIR
 ## Music Generation/Understanding
 ### Symbolic Music Generation
+BUTTER: A representation learning framework for bi-directional music-sentence retrieval and generation [NLP4MusA20, [#67](https://github.com/InabaTatsuro/papers/issues/67)]
+- use VAE to encode music, GRU to encode text description, and linear transformation to transform these representations into the same embedding space
+- in cross-modal alignment(by linear transform), the loss is calculated separately for each attributes(key, meter, style)
+
 Motif-Centric Representation Learning for Symbolic Music [arXiv23/9, [#66](https://github.com/InabaTatsuro/papers/issues/66)]
 - Use VICReg, the training method in which no negative samples are used, for pretraining the model and use contrastive learning for finetuning
 - to reduce the influence of randomly selected negative samples that have similar segments with positive samples
