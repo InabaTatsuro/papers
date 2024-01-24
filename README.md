@@ -159,6 +159,13 @@ ERNIE-Music: Text-to-Waveform Music Generation with Diffusion Models [AACLdemo23
 - use the diffusion model to generate music conditioned by free-form text
 - outperform the previous models in terms of text-music relevance and music quality, as judged by human
 
+### Audio Music Understanding
+MERT: Acoustic Music Understanding Model with Large-Scale Self-supervised Training [ICLR24, [#68](https://github.com/InabaTatsuro/papers/issues/68)]
+- SSL for acoustic music understanding by HuBERT-based model with AcousticMLM and MusicalMLM
+- AcousticMLM uses k-means on the log-Mel spectrum and Chroma features and EnCodec (VQ-VAE)
+- MusicalMLM uses Constant-Q transform (CQT) spectrogram
+
+
 ### Survey
 Data Collection in Music Generation Training Sets: A Critical Analysis [ISMIR23, [#45](https://github.com/InabaTatsuro/papers/issues/45)]
 - Analysis of all datasets used to train Automatic Music Generation (AMG) models presented at the last 10 editions of ISMIR
