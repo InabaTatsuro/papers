@@ -1,6 +1,11 @@
 # MIR
 ## Music Generation/Understanding
 ### Symbolic Music Generation
+
+Whole-song Hierarchical Generation of Symbolic Music Using Cascaded Diffusion Models [ICLR24, [#69](https://github.com/InabaTatsuro/papers/issues/69)]
+- cascaded diffusion models for hierarchical composition, high-level(whole song form) to low-level(notes, chords)
+- use not only background(high-level) conditions, but also former relevant music segments and external controls
+
 BUTTER: A representation learning framework for bi-directional music-sentence retrieval and generation [NLP4MusA20, [#67](https://github.com/InabaTatsuro/papers/issues/67)]
 - use VAE to encode music, GRU to encode text description, and linear transformation to transform these representations into the same embedding space
 - in cross-modal alignment(by linear transform), the loss is calculated separately for each attributes(key, meter, style)
