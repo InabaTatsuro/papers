@@ -260,6 +260,11 @@ Jointly Learning to Align and Translate with Transformer Models [EMNLP19, [#57](
 - train the transformer for both translation and word alignment tasks.
 - transformer models produce translations and interpretable alignments simultaneously by a multi-task framework
 
+## LM as Knowledge-base
+Crawling The Internal Knowledge-Base of Language Models [ACL23 findings, [#70](https://github.com/InabaTatsuro/papers/issues/70)]
+- given a seed entity, generate the knowledge that is related to the seed by in-context learning
+- divide into sub-tasks where the relation, object, and paraphrasing are generated separately by few-shot
+
 ## Read Later
 Locating and Editing Factual Associations in GPT [[Meng+, NeurIPS22](https://openreview.net/forum?id=-h6WAS6eE4)]
 
