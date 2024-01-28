@@ -1,7 +1,6 @@
 # MIR
 ## Music Generation/Understanding
 ### Symbolic Music Generation
-
 Whole-song Hierarchical Generation of Symbolic Music Using Cascaded Diffusion Models [ICLR24, [#69](https://github.com/InabaTatsuro/papers/issues/69)]
 - cascaded diffusion models for hierarchical composition, high-level(whole song form) to low-level(notes, chords)
 - use not only background(high-level) conditions, but also former relevant music segments and external controls
@@ -165,6 +164,10 @@ ERNIE-Music: Text-to-Waveform Music Generation with Diffusion Models [AACLdemo23
 - outperform the previous models in terms of text-music relevance and music quality, as judged by human
 
 ### Audio Music Understanding
+LP-MusicCaps: LLM-Based Pseudo Music Captioning [ISMIR23, [#71](https://github.com/InabaTatsuro/papers/issues/71)]
+- Use LLM to generate the pseudo captions for MusicCaps dataset
+- 4 different instructions (Writing, Summary, Paraphrase, Attribute Predictions)
+
 MERT: Acoustic Music Understanding Model with Large-Scale Self-supervised Training [ICLR24, [#68](https://github.com/InabaTatsuro/papers/issues/68)]
 - SSL for acoustic music understanding by HuBERT-based model with AcousticMLM and MusicalMLM
 - AcousticMLM uses k-means on the log-Mel spectrum and Chroma features and EnCodec (VQ-VAE)
