@@ -275,6 +275,11 @@ Mass-Editing Memory in a Transformer [[Meng+, ICLR23](https://openreview.net/for
 - the research after "Locating and Editing Factual Associations in GPT"
 
 # ML
+## Representation Learning
+Learning Interpretable Low-dimensional Representation via Physical Symmetry [NeurIPS23, [#72](https://github.com/InabaTatsuro/papers/issues/72)]
+- use physical symmetry as a self-consistency constraint for the latent space of time-series data
+- the constraints lead the model to learn interpretable representation
+
 ## Attention, graph
 Do Transformers Really Perform Bad for Graph Representation? [[NeurIPS21](https://arxiv.org/abs/2106.05234)][[#21](https://github.com/InabaTatsuro/papers/issues/21)]
 - propose Graphormer, which is based on the standard Transformer and can utilize the structural information of a graph
