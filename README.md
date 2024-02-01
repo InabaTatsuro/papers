@@ -281,6 +281,9 @@ Learning Interpretable Low-dimensional Representation via Physical Symmetry [Neu
 - the constraints lead the model to learn interpretable representation
 
 ## Attention, graph
+A Survey on Deep Graph Generation: Methods and Applications [PRML22, [#73](https://github.com/InabaTatsuro/papers/issues/73)]
+- formulation of the problem of deep graph generation, discussion of its difference with several related graph learning tasks, 3 categories of the methods, applications, challenges
+
 Do Transformers Really Perform Bad for Graph Representation? [[NeurIPS21](https://arxiv.org/abs/2106.05234)][[#21](https://github.com/InabaTatsuro/papers/issues/21)]
 - propose Graphormer, which is based on the standard Transformer and can utilize the structural information of a graph
 - similar to [#18](https://github.com/InabaTatsuro/papers/issues/18)
