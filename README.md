@@ -263,7 +263,11 @@ Jointly Learning to Align and Translate with Transformer Models [EMNLP19, [#57](
 - train the transformer for both translation and word alignment tasks.
 - transformer models produce translations and interpretable alignments simultaneously by a multi-task framework
 
-## LM as Knowledge-base
+## LM Analysis
+Linearity of Relation Decoding in Transformer Language Models [ICLR24, [#74](https://github.com/InabaTatsuro/papers/issues/74)]
+- Relation mappings between subjects and objects can be approximated by a single linear transformation
+- E.g., s = intermediate rep of "Miles Davis", R = linear transformation for "play the instrument", o = last rep of "strumpet", then o ≒ Rs
+
 Crawling The Internal Knowledge-Base of Language Models [ACL23 findings, [#70](https://github.com/InabaTatsuro/papers/issues/70)]
 - given a seed entity, generate the knowledge that is related to the seed by in-context learning
 - divide into sub-tasks where the relation, object, and paraphrasing are generated separately by few-shot
